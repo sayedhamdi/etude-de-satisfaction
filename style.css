@@ -1,0 +1,200 @@
+body{
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+#head-section{
+    background-image: -webkit-linear-gradient(120deg, #744A7D 0%, #C5373F 100%);
+    color: #fff;
+}
+
+.title{
+    padding: 3vh;
+    text-align: left;
+}
+
+#houni{
+    height: 50vh;
+}
+
+.titre{
+    padding: 20vh 0 5vh;
+}
+.inputss{
+  font-weight: 300;
+  color: #000;
+  width: 50%;
+  margin: 0 auto !important;
+  font-size: 10px;
+}
+
+
+
+p{
+    font-weight: 700;
+}
+
+
+/*carousel*/
+.carousel-control-prev-icon,
+.carousel-control-next-icon {  
+    outline: black;
+    background-size: 100%, 100%;
+    background-image: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.next-icon:focus{
+    color: #744a7d !important;
+}
+
+.carousel-control-nex:focus{
+    color: #744a7d !important;
+
+}
+
+.next-icon:after
+{
+  content: '>';
+  font-size: 3rem;
+  color: #744A7D;
+}
+
+.next-icon{
+ opacity: .5;  
+}
+.next-icon:hover{
+ opacity: 1;   
+}
+
+.prev-icon:after {
+  content: '<';
+  font-size: 3rem;
+  color: #C5373F;
+
+}
+
+.prev-icon{
+    opacity: .5;
+}
+
+.prev-icon:hover{
+    opacity: 1;
+}
+
+a{
+    margin-top: 250px;
+}
+
+.btn{
+  padding: 8px 40px;
+  background-color: #fff;
+  border: 1px solid #C5373F;
+  color: #C5373F;
+}
+
+.btn:hover{
+  background-image: -webkit-linear-gradient(120deg, #744A7D 0%, #C5373F 100%);
+  color: #fff;
+}
+
+
+/*===============================================textarea=====================================================*/
+
+
+/* form starting stylings ------------------------------- */
+.group {
+  position: relative;
+  margin-bottom: 45px;
+}
+
+textarea {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid #757575;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+/* LABEL ======================================= */
+label {
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+textarea:focus~label,
+textarea:valid~label {
+  top: -20px;
+  font-size: 14px;
+  color: #C5373F;
+}
+
+/* BOTTOM BARS ================================= */
+.bar {
+  position: relative;
+  display: block;
+  width: 300px;
+}
+
+.bar:before,
+.bar:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #C5373F;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+  left: 50%;
+}
+
+.bar:after {
+  right: 50%;
+}
+
+/* active state */
+textarea:focus~.bar:before,
+textarea:focus~.bar:after {
+  width: 50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* active state */
+textarea:focus~.highlight {
+  -webkit-animation: inputHighlighter 0.3s ease;
+  -moz-animation: inputHighlighter 0.3s ease;
+  animation: inputHighlighter 0.3s ease;
+}

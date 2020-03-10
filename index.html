@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OrendaJE | Satisfaction</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:700&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <style type="text/css">
+    body {
+      margin: 0;
+      padding: 0
+    }
+  </style>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    /* basic stylings ------------------------------------------ */
+    body {
+      background: url(https://scotch.io/wp-content/uploads/2014/07/61.jpg);
+    }
+
+    .container1 {
+      display: block;
+      background: #FFF;
+      padding: 10px 50px 50px;
+    }
+
+    /* form starting stylings ------------------------------- */
+    .group {
+      position: relative;
+      margin-bottom: 45px;
+    }
+
+    input {
+      font-size: 18px;
+      padding: 10px 10px 10px 5px;
+      display: block;
+      width: 300px;
+      border: none;
+      border-bottom: 1px solid #757575;
+    }
+
+    input:focus {
+      outline: none;
+    }
+
+    /* LABEL ======================================= */
+    label {
+      color: rgb(66, 62, 62);
+      font-size: 18px;
+      font-weight: normal;
+      position: absolute;
+      pointer-events: none;
+      left: 5px;
+      top: 10px;
+      transition: 0.2s ease all;
+      -moz-transition: 0.2s ease all;
+      -webkit-transition: 0.2s ease all;
+    }
+
+    /* active state */
+    input:focus~label,
+    input:valid~label {
+      top: -20px;
+      font-size: 14px;
+      color: #C5373F;
+    }
+
+    /* BOTTOM BARS ================================= */
+    .bar {
+      position: relative;
+      display: block;
+      width: 300px;
+    }
+
+    .bar:before,
+    .bar:after {
+      content: '';
+      height: 2px;
+      width: 0;
+      bottom: 1px;
+      position: absolute;
+      background: #C5373F;
+      transition: 0.2s ease all;
+      -moz-transition: 0.2s ease all;
+      -webkit-transition: 0.2s ease all;
+    }
+
+    .bar:before {
+      left: 50%;
+    }
+
+    .bar:after {
+      right: 50%;
+    }
+
+    /* active state */
+    input:focus~.bar:before,
+    input:focus~.bar:after {
+      width: 50%;
+    }
+
+    /* HIGHLIGHTER ================================== */
+    .highlight {
+      position: absolute;
+      height: 60%;
+      width: 100px;
+      top: 25%;
+      left: 0;
+      pointer-events: none;
+      opacity: 0.5;
+    }
+
+    /* active state */
+    input:focus~.highlight {
+      -webkit-animation: inputHighlighter 0.3s ease;
+      -moz-animation: inputHighlighter 0.3s ease;
+      animation: inputHighlighter 0.3s ease;
+    }
+  </style>
+</head>
+
+<body>
+  <section id="head-section">
+    <div class="container-fluid title">
+      <h2>Etude De Satisfaction</h2>
+    </div>
+  </section>
+  <div id="houni" class="carousel slide" data-ride="false">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <section>
+          <div class="titre" style="margin-bottom: 100px;">
+            <h2>Hi 👋 What's your name?</h2>
+          </div>
+          <div class="container1 inputss">
+            <form>
+              <div class="row">
+                <div class="group col col-lg-6">
+                  <input type="text" required>
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>Name</label>
+                </div>
+                <div class="group col col-lg-6">
+                  <input type="text" required>
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label>Email</label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+      </div>
+      <div class="carousel-item">
+        <section>
+          <div class="titre">
+            <h2>What service have we done for you?</h2>
+          </div>
+          <div class="row inputss" style="padding-top: 50px;">
+            <div class="col">
+              <a style="color: inherit;" href="game.html"><i style="font-size:50px; cursor: pointer;" class="fab hovreha1">&#xf949;</i></a>
+              <div style="padding-top: 20px;">
+                <p class="p1">Game Development</p>
+              </div>
+            </div>
+            <div class="col">
+              <a style="color: inherit;" href="xeb.html"><i style="font-size:50px; cursor: pointer;" class="fas hovreha2">&#xf121;</i></a>
+              <div style="padding-top: 20px;">
+                <p class="p2">Web Development</p>
+              </div>
+            </div>
+            <div class="col">
+              <a style="color: inherit;" href="video.html"><i style="font-size:50px; cursor: pointer;" class="far hovreha3">&#xf1c8;</i></a>
+              <div style="padding-top: 20px;">
+                <p class="p3">Video Editing</p>
+              </div>
+            </div>
+            <div class="col">
+              <a style="color: inherit;" href="design.html"><i style="font-size:50px; cursor: pointer;" class="fas hovreha4">&#xf1de;</i></a>
+              <div style="padding-top: 20px;">
+                <p class="p4">Graphic Design</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#houni" role="button" data-slide="prev">
+      <span class="prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#houni" role="button" data-slide="next">
+      <span class="next-icon"></span>
+    </a>
+  </div>
+  <!--inputs-->
+  <script>
+    window.console = window.console || function (t) {};
+  </script>
+  <script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage("resize", "*");
+    }
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="index.js"></script>
+  <!-- Font Awesome -->
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
